@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -48,7 +49,7 @@ const Testimonials = () => {
               transition={{ delay: index * 0.2 }}
               className="bg-white p-6 rounded-lg shadow-lg"
             >
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-16 h-16 rounded-full mx-auto mb-4"
